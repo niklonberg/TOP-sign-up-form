@@ -4,6 +4,11 @@
     --fs-large: 2rem;
     --fs-medium: 1rem;
     --fs-small: 0.875rem;
+
+    --primary-color: #596d48;
+    --light-surface-color: #f9fafb;
+    --text-color: #000000;
+    --text-color-faded: #575f69;
   }
 
   @font-face {
@@ -19,6 +24,7 @@
 
   body {
     font-family: system-ui, sans-serif;
+    background-color: var(--light-surface-color);
     margin: 0;
   }
 
