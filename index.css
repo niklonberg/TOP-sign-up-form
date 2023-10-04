@@ -1,4 +1,6 @@
 @layer base, component, page;
 
 @import url(/styles/components/base.css);
-@import url(/styles/components/sign-up.css);
+@import url(/styles/pages/sign-up.css);
+@import url(/styles/components/container.css);
+@import url(/styles/components/header.css);

@@ -1,0 +1,16 @@
+@layer component {
+  .header-title-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    background-color: rgba(0 0 0 / 0.5);
+  }
+
+  .header-title {
+    color: white;
+    font-family: Norse-Bold;
+    font-size: var(--fs-title);
+    margin-block: 30px;
+  }
+}
