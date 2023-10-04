@@ -7,8 +7,9 @@
 
     --primary-color: #596d48;
     --light-surface-color: #f9fafb;
-    --text-color: #000000;
+    --text-color: #1a1a1a;
     --text-color-faded: #575f69;
+    --text-shadow: black;
   }
 
   @font-face {
