@@ -11,12 +11,14 @@
     align-items: center;
     justify-content: center;
     gap: 0px;
+    background-color: rgba(0 0 0 / 0.3);
   }
 
   #header-title {
     color: white;
     font-family: Norse-Bold;
     font-size: var(--fs-title);
+    margin-block: 30px;
   }
 
   #header-img-credit {
