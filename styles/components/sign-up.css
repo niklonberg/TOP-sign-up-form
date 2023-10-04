@@ -1,5 +1,10 @@
 @layer component {
-  #sign-up {
-    font-size: 4rem;
+  #sign-up-header {
+    background-image: url(/assets/img/olena-bohovyk-r0M9HrfJMBM-unsplash.jpg);
+    background-repeat: no-repeat;
+  }
+
+  #header-title {
+    color: white;
   }
 }
