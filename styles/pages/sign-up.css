@@ -15,6 +15,8 @@
     font-size: var(--fs-small);
     letter-spacing: 1.2px;
     text-shadow: 1px 1px 2px var(--text-shadow);
+    text-align: center;
+    min-width: 200px;
   }
 }
 
@@ -23,5 +25,10 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 2fr;
+  }
+
+  #header-img-credit {
+    right: 50%;
+    transform: translateX(50%);
   }
 }
