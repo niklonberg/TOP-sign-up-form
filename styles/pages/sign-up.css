@@ -1,10 +1,11 @@
 @layer page {
   #sign-up-header {
+    --header-padding: 50px;
     position: relative;
     background-image: url(/assets/img/olena-bohovyk-r0M9HrfJMBM-unsplash.jpg);
     background-size: cover;
     background-position: bottom;
-    padding-block: 50px;
+    padding-block: var(--header-padding);
   }
 
   #header-img-credit {
@@ -25,6 +26,10 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 2fr;
+  }
+
+  #sign-up-header {
+    padding-top: calc(var(--header-padding) * 3);
   }
 
   #header-img-credit {
