@@ -1,5 +1,14 @@
 @layer base {
   :root {
+    --fs-title: 6rem;
+    --fs-large: 2rem;
+    --fs-medium: 1rem;
+    --fs-small: 0.875rem;
+  }
+
+  @font-face {
+    font-family: Norse-Bold;
+    src: url(/assets/fonts/Norse-Bold.otf);
   }
 
   *,
@@ -9,7 +18,7 @@
   }
 
   body {
-    font-family: system-ui;
+    font-family: system-ui, sans-serif;
     margin: 0;
   }
 

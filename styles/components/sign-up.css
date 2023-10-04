@@ -1,14 +1,30 @@
 @layer component {
   #sign-up-header {
+    position: relative;
     background-image: url(/assets/img/olena-bohovyk-r0M9HrfJMBM-unsplash.jpg);
-    background-repeat: no-repeat;
+    background-size: cover;
+    padding-block: 50px;
+  }
+
+  #header-title-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
   }
 
   #header-title {
     color: white;
+    font-family: Norse-Bold;
+    font-size: var(--fs-title);
   }
 
   #header-img-credit {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
     color: white;
+    text-align: center;
   }
 }
