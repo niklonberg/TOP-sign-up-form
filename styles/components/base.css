@@ -35,4 +35,8 @@
     font: inherit;
     font-size: 100%;
   }
+
+  a {
+    color: inherit;
+  }
 }
