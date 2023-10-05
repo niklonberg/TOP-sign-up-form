@@ -51,16 +51,6 @@
     right: -20px;
     transform: translateY(-50%);
   }
-
-  input:valid + span::after {
-    content: "✓";
-    color: green;
-  }
-
-  input:invalid + span::after {
-    content: "✖";
-    color: red;
-  }
 }
 
 @media (min-width: 950px) {

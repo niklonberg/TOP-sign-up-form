@@ -28,6 +28,10 @@
     font-weight: bold;
     max-width: 50ch;
   }
+
+  #sign-up-footer {
+    padding-block: 30px;
+  }
 }
 
 @media (min-width: 750px) {
@@ -52,9 +56,5 @@
 
   #sign-up-selling-point p:first-child {
     padding-top: calc(var(--header-padding) * 1.5);
-  }
-
-  #sign-up-footer {
-    padding-block: 30px;
   }
 }
