@@ -42,4 +42,8 @@
   a {
     color: inherit;
   }
+
+  p {
+    max-width: 60ch;
+  }
 }
