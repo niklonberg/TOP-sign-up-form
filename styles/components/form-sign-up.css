@@ -33,6 +33,34 @@
     letter-spacing: 1.2px;
     color: var(--text-color-faded);
   }
+
+  .sign-up__item > div {
+    position: relative;
+  }
+
+  .sign-up__item span::before {
+    position: absolute;
+    content: "*";
+    top: -20px;
+    right: 10px;
+  }
+
+  .sign-up__item span::after {
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+  }
+
+  input:valid + span::after {
+    content: "✓";
+    color: green;
+  }
+
+  input:invalid + span::after {
+    content: "✖";
+    color: red;
+  }
 }
 
 @media (min-width: 950px) {
