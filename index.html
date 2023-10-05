@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/index.css" />
   </head>
   <body>
-    <div id="sign-up-layout">
+    <div id="sign-up-page-layout">
       <header id="sign-up-header">
         <div class="header-title-layout">
           <img
@@ -46,53 +46,67 @@
         <form id="sign-up-form" action="#" method="post">
           <fieldset>
             <legend>Let's do this!</legend>
-            <label for="first-name">First name</label>
-            <input
-              type="text"
-              name="first-name"
-              id="first-name"
-              autocomplete="given-name"
-              required
-            />
-            <label for="last-name">Last name</label>
-            <input
-              type="text"
-              name="last-name"
-              id="last-name"
-              autocomplete="family-name"
-              required
-            />
-            <label for="user-email">Email</label>
-            <input
-              type="email"
-              name="user-email"
-              id="user-email"
-              autocomplete="email"
-              required
-            />
-            <label for="user-phone">Phone number</label>
-            <input
-              type="tel"
-              name="user-phone"
-              id="user-phone"
-              autocomplete="tel"
-            />
-            <label for="user-pass">Password</label>
-            <input
-              type="password"
-              name="user-pass"
-              id="user-pass"
-              autocomplete="new-password"
-              required
-            />
-            <label for="confirm-pass">Confirm password</label>
-            <input
-              type="password"
-              name="confirm-pass"
-              id="confirm-pass"
-              autocomplete="off"
-              required
-            />
+            <div id="sign-up">
+              <div class="sign-up__item">
+                <label for="first-name">First name</label>
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autocomplete="given-name"
+                  required
+                />
+              </div>
+              <div class="sign-up__item">
+                <label for="last-name">Last name</label>
+                <input
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  autocomplete="family-name"
+                  required
+                />
+              </div>
+              <div class="sign-up__item">
+                <label for="user-email">Email</label>
+                <input
+                  type="email"
+                  name="user-email"
+                  id="user-email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+              <div class="sign-up__item">
+                <label for="user-phone">Phone number</label>
+                <input
+                  type="tel"
+                  name="user-phone"
+                  id="user-phone"
+                  autocomplete="tel"
+                />
+              </div>
+              <div class="sign-up__item">
+                <label for="user-pass">Password</label>
+                <input
+                  type="password"
+                  name="user-pass"
+                  id="user-pass"
+                  autocomplete="new-password"
+                  required
+                />
+              </div>
+              <div class="sign-up__item">
+                <label for="confirm-pass">Confirm password</label>
+                <input
+                  type="password"
+                  name="confirm-pass"
+                  id="confirm-pass"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+            </div>
           </fieldset>
           <button type="submit">Create Account</button>
         </form>
