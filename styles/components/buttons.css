@@ -1,4 +1,22 @@
 @layer component {
-  .sign-up-button {
+  .btn {
+    cursor: pointer;
+    transition: all 0.3s;
+    padding: 1em 2em;
+    border-radius: 0.5em;
+  }
+
+  .btn:hover {
+    opacity: 0.9;
+  }
+
+  .btn:active {
+    translate: 1px 1px;
+  }
+
+  .sign-up-btn {
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: var(--text-colored-background);
   }
 }
