@@ -47,10 +47,13 @@
         </div>
         <form id="sign-up-form" class="container" action="#" method="post">
           <fieldset id="sign-up-fieldset">
-            <legend>Let's do this!</legend>
+            <legend>
+              Sign up - required fields marked with
+              <span aria-label="required">*</span>
+            </legend>
             <div id="sign-up">
               <div class="sign-up__item">
-                <label for="first-name">First name</label>
+                <label for="first-name">Given name</label>
                 <input
                   type="text"
                   name="first-name"
@@ -58,15 +61,15 @@
                   autocomplete="given-name"
                   required
                 />
+                <span aria-label="required">*</span>
               </div>
               <div class="sign-up__item">
-                <label for="last-name">Last name</label>
+                <label for="last-name">Family name</label>
                 <input
                   type="text"
                   name="last-name"
                   id="last-name"
                   autocomplete="family-name"
-                  required
                 />
               </div>
               <div class="sign-up__item">
@@ -78,6 +81,7 @@
                   autocomplete="email"
                   required
                 />
+                <span aria-label="required">*</span>
               </div>
               <div class="sign-up__item">
                 <label for="user-phone">Phone number</label>
@@ -97,6 +101,7 @@
                   autocomplete="new-password"
                   required
                 />
+                <span aria-label="required">*</span>
               </div>
               <div class="sign-up__item">
                 <label for="confirm-pass">Confirm password</label>
@@ -107,6 +112,7 @@
                   autocomplete="off"
                   required
                 />
+                <span aria-label="required">*</span>
               </div>
             </div>
           </fieldset>
