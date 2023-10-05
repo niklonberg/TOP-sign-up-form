@@ -9,9 +9,13 @@
     outline: 0;
   }
 
-  input:invalid {
+  .input-invalid {
     border-color: red;
   }
+
+  /* input:invalid {
+    border-color: red;
+  } */
 
   input:focus-visible {
     border: 2px solid rgb(20, 136, 174);

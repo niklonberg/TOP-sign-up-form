@@ -12,5 +12,12 @@ const submitBtn = document.querySelector("#submit-form-btn");
 }); */
 
 submitBtn.addEventListener("click", (event) => {
-  log(event);
+  if (password.value === confirmPassword.value) {
+    form.submit();
+  } else {
+    event.preventDefault();
+    password.classList.add("input-invalid");
+    confirmPassword.classList.add("input-invalid");
+    log("error");
+  }
 });
