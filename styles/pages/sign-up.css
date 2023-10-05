@@ -46,7 +46,15 @@
     transform: translateX(50%);
   }
 
+  #sign-up-selling-point {
+    margin-bottom: 60px;
+  }
+
   #sign-up-selling-point p:first-child {
     padding-top: calc(var(--header-padding) * 1.5);
+  }
+
+  #sign-up-footer {
+    padding-block: 30px;
   }
 }

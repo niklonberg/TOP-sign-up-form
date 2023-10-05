@@ -34,7 +34,7 @@
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 950px) {
   #sign-up {
     grid-template-columns: 1fr 1fr;
   }

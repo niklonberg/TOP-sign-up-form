@@ -52,4 +52,10 @@
   legend {
     font-size: var(--fs-x);
   }
+
+  .ax-button {
+    all: unset;
+    outline: revert;
+    box-sizing: border-box;
+  }
 }
