@@ -1,6 +1,9 @@
 @layer page {
-  #sign-up-header {
+  #sign-up-page-layout {
     --header-padding: 50px;
+  }
+
+  #sign-up-header {
     position: relative;
     background-image: url(/assets/img/olena-bohovyk-r0M9HrfJMBM-unsplash.jpg);
     background-size: cover;
@@ -19,6 +22,12 @@
     text-align: center;
     min-width: 200px;
   }
+
+  #sign-up-selling-point p {
+    font-size: var(--fs-xl);
+    font-weight: bold;
+    max-width: 50ch;
+  }
 }
 
 @media (min-width: 750px) {
@@ -35,5 +44,9 @@
   #header-img-credit {
     right: 50%;
     transform: translateX(50%);
+  }
+
+  #sign-up-selling-point p:first-child {
+    padding-top: calc(var(--header-padding) * 1.5);
   }
 }

@@ -1,2 +1,41 @@
 @layer component {
+  #sign-up-form {
+    background-color: white;
+    box-shadow: 0px 1px 4px rgba(0 0 0 / 0.3);
+    padding-block: 20px;
+  }
+
+  #sign-up-fieldset {
+    border: 0;
+    padding: 0;
+    max-width: 650px;
+  }
+
+  #sign-up-fieldset legend {
+    margin-bottom: 20px;
+  }
+
+  #sign-up {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px 60px;
+  }
+
+  .sign-up__item {
+    display: grid;
+  }
+
+  .sign-up__item label {
+    font-size: var(--fs-small);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--text-color-faded);
+  }
+}
+
+@media (min-width: 900px) {
+  #sign-up {
+    grid-template-columns: 1fr 1fr;
+  }
 }
