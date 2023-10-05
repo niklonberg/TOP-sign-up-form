@@ -1,7 +1,7 @@
 @layer component {
   #sign-up-form {
     background-color: white;
-    box-shadow: 0px 1px 4px rgba(0 0 0 / 0.3);
+    box-shadow: 0px 2px 6px rgba(0 0 0 / 0.2);
     padding-block: 20px;
   }
 
@@ -23,6 +23,7 @@
 
   .sign-up__item {
     display: grid;
+    gap: 4px;
   }
 
   .sign-up__item label {
