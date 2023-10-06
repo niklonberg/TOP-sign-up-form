@@ -11,25 +11,21 @@ const submitBtn = document.querySelector("#submit-form-btn"); */
 
 inputs.forEach((input) => {
   input.addEventListener("blur", (event) => {
-    log(event.target);
-    const inputValid = event.target.checkValidity();
-    log(inputValid);
-    const siblingSpan = event.target.nextElementSibling;
-    log(siblingSpan);
+    const input = event.target;
+    const inputValid = input.checkValidity();
+    const siblingSpan = input.nextElementSibling;
+
+    siblingSpan.classList.remove("display-none");
+
     if (inputValid) {
-      /* siblingSpan.classlist.add('inputValid') */
+      input.classList.remove("input-invalid");
+      input.classList.add("input-valid");
     } else {
-      /* siblignSPan.classList.add('inputInvalid) */
+      input.classList.remove("input-valid");
+      input.classList.add("input-invalid");
     }
   });
 });
-
-/* some kind of loop to add valid/invalid classes to inputs, when user is
-  finished with an input (blur?)
-  check if they have an isValid property or something,
-  can then apply valid/invalid-input class to show checkmark/error and 
-  hide / unhide descriptive labels telling how to fix the issue.
-*/
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();

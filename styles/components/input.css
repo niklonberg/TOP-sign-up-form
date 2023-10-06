@@ -18,12 +18,16 @@
     border-color: red;
   }
 
-  input:valid + span::after {
+  .input-valid {
+    border-color: rgb(56, 228, 56);
+  }
+
+  .input-valid + span::after {
     content: "✓";
     color: green;
   }
 
-  input:invalid + span::after {
+  .input-invalid + span::after {
     content: "✖";
     color: red;
   }
