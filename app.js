@@ -12,6 +12,11 @@ const submitBtn = document.querySelector("#submit-form-btn"); */
 inputs.forEach((input) => {
   input.addEventListener("blur", (event) => {
     log(event.target);
+    const inputValid = event.target.checkValidity();
+    log(inputValid);
+    if (inputValid) {
+    } else {
+    }
   });
 });
 
