@@ -14,6 +14,8 @@ inputs.forEach((input) => {
     log(event.target);
     const inputValid = event.target.checkValidity();
     log(inputValid);
+    const siblingSpan = event.target.nextElementSibling;
+    log(siblingSpan);
     if (inputValid) {
     } else {
     }
