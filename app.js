@@ -3,23 +3,16 @@ const log = console.log;
 const form = document.querySelector("#sign-up-form");
 
 const inputs = document.querySelectorAll("input");
-log(inputs);
 
-const password = document.querySelector("#user-pass");
+/* const password = document.querySelector("#user-pass");
 const confirmPassword = document.querySelector("#confirm-pass");
 
-const submitBtn = document.querySelector("#submit-form-btn");
+const submitBtn = document.querySelector("#submit-form-btn"); */
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  if (password.value === confirmPassword.value) {
-    form.submit();
-    log("form submitted");
-  } else {
-    password.classList.add("input-invalid");
-    confirmPassword.classList.add("input-invalid");
-    log("error");
-  }
+inputs.forEach((input) => {
+  input.addEventListener("blur", (event) => {
+    log(event.target);
+  });
 });
 
 /* add eventlistener to array of inputs, listeneing for blur event
@@ -34,4 +27,14 @@ form.addEventListener("submit", (event) => {
   hide / unhide descriptive labels telling how to fix the issue.
 */
 
-/* submitBtn.addEventListener("click", (event) => {}); */
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  if (password.value === confirmPassword.value) {
+    form.submit();
+    log("form submitted");
+  } /* else {
+    password.classList.add("input-invalid");
+    confirmPassword.classList.add("input-invalid");
+    log("error");
+  } */
+});
