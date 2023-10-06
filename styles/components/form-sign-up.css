@@ -47,10 +47,8 @@
     position: relative;
   }
 
-  .box-content span::after,
-  .box-content span::before {
+  .box-content span::after {
     position: absolute;
-    content: "hello";
     top: 50%;
     right: -20px;
     transform: translateY(-50%);

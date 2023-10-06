@@ -15,14 +15,10 @@
   }
 
   .input-invalid {
-    visibility: hidden;
+    border-color: red;
   }
 
-  /* input:invalid {
-    border-color: red;
-  } */
-
-  /* input:valid + span::after {
+  input:valid + span::after {
     content: "✓";
     color: green;
   }
@@ -30,5 +26,5 @@
   input:invalid + span::after {
     content: "✖";
     color: red;
-  } */
+  }
 }
