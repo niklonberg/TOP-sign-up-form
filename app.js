@@ -17,15 +17,12 @@ inputs.forEach((input) => {
     const siblingSpan = event.target.nextElementSibling;
     log(siblingSpan);
     if (inputValid) {
+      /* siblingSpan.classlist.add('inputValid') */
     } else {
+      /* siblignSPan.classList.add('inputInvalid) */
     }
   });
 });
-
-/* add eventlistener to array of inputs, listeneing for blur event
- to add classes to their span,
- how can i connect the input to the correct span? hmm..
- */
 
 /* some kind of loop to add valid/invalid classes to inputs, when user is
   finished with an input (blur?)
@@ -40,8 +37,6 @@ form.addEventListener("submit", (event) => {
     form.submit();
     log("form submitted");
   } /* else {
-    password.classList.add("input-invalid");
-    confirmPassword.classList.add("input-invalid");
     log("error");
   } */
 });
