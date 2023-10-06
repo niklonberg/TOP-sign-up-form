@@ -21,12 +21,13 @@
     gap: 20px 60px;
   }
 
-  .sign-up__item {
+  .sign-up__box {
     display: grid;
     gap: 4px;
   }
 
-  .sign-up__item label {
+  .box-label {
+    position: relative;
     font-size: var(--fs-small);
     font-weight: bold;
     text-transform: uppercase;
@@ -34,23 +35,20 @@
     color: var(--text-color-faded);
   }
 
-  .sign-up__item > div {
-    position: relative;
-  }
-
-  .sign-up__item span::before {
+  .box-label span::before {
     position: absolute;
     content: "*";
-    top: -20px;
-    right: 10px;
+    font-size: 16px;
+    bottom: -5px;
+    right: 0px;
   }
 
-  .sign-up__item span::after {
+  /* .sign-up__item span::after {
     position: absolute;
     top: 50%;
     right: -20px;
     transform: translateY(-50%);
-  }
+  } */
 }
 
 @media (min-width: 950px) {

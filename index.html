@@ -52,9 +52,11 @@
               <span aria-label="required">*</span>
             </legend>
             <div id="sign-up">
-              <div class="sign-up__item">
-                <label for="first-name">Given name</label>
-                <div>
+              <div class="sign-up__box">
+                <label class="box-label" for="first-name"
+                  >Given name <span aria-label="required"></span
+                ></label>
+                <div class="box-content">
                   <input
                     type="text"
                     name="first-name"
@@ -62,11 +64,11 @@
                     autocomplete="given-name"
                     required
                   />
-                  <span aria-label="required"></span>
+                  <span></span>
                 </div>
               </div>
-              <div class="sign-up__item">
-                <label for="last-name">Family name</label>
+              <div class="sign-up__box">
+                <label class="box-label" for="last-name">Family name</label>
                 <input
                   type="text"
                   name="last-name"
@@ -74,9 +76,11 @@
                   autocomplete="family-name"
                 />
               </div>
-              <div class="sign-up__item">
-                <label for="user-email">Email</label>
-                <div>
+              <div class="sign-up__box">
+                <label class="box-label" for="user-email"
+                  >Email <span aria-label="required"></span
+                ></label>
+                <div class="box-content">
                   <input
                     type="email"
                     name="user-email"
@@ -84,11 +88,11 @@
                     autocomplete="email"
                     required
                   />
-                  <span aria-label="required"></span>
+                  <span></span>
                 </div>
               </div>
-              <div class="sign-up__item">
-                <label for="user-phone">Phone number</label>
+              <div class="sign-up__box">
+                <label class="box-label" for="user-phone">Phone number</label>
                 <input
                   type="tel"
                   name="user-phone"
@@ -96,9 +100,11 @@
                   autocomplete="tel"
                 />
               </div>
-              <div class="sign-up__item">
-                <label for="user-pass">Password</label>
-                <div>
+              <div class="sign-up__box">
+                <label class="box-label" for="user-pass"
+                  >Password <span aria-label="required"></span
+                ></label>
+                <div class="box-content">
                   <input
                     type="password"
                     name="user-pass"
@@ -107,12 +113,14 @@
                     minlength="8"
                     required
                   />
-                  <span aria-label="required"></span>
+                  <span></span>
                 </div>
               </div>
-              <div class="sign-up__item">
-                <label for="confirm-pass">Confirm password</label>
-                <div>
+              <div class="sign-up__box">
+                <label class="box-label" for="confirm-pass"
+                  >Confirm password <span aria-label="required"></span
+                ></label>
+                <div class="box-content">
                   <input
                     type="password"
                     name="confirm-pass"
@@ -121,7 +129,7 @@
                     minlength="8"
                     required
                   />
-                  <span aria-label="required"></span>
+                  <span></span>
                 </div>
               </div>
             </div>
