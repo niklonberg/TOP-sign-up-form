@@ -1,7 +1,6 @@
 const log = console.log;
 
 import InputValidate from "/classes/inputValidater.js";
-
 const InputValidater = new InputValidate();
 
 const form = document.querySelector("#sign-up-form");
@@ -19,12 +18,8 @@ inputs.forEach((input) => {
     siblingSpan.classList.remove("display-none");
 
     if (input.id === confirmPassword.id && input.value !== password.value) {
-      input.classList.remove("input-valid");
-      input.classList.add("input-invalid");
-      return;
-    }
-
-    if (inputIsValid) {
+      InputValidater.inputInvalid(input);
+    } else if (inputIsValid) {
       InputValidater.inputValid(input);
     } else {
       InputValidater.inputInvalid(input);
@@ -37,7 +32,5 @@ form.addEventListener("submit", (event) => {
   if (password.value === confirmPassword.value) {
     form.submit();
     log("form submitted");
-  } /* else {
-    log("error");
-  } */
+  }
 });
