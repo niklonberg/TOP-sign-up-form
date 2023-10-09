@@ -10,10 +10,7 @@ const phone = document.querySelector("#user-phone");
 
 const password = document.querySelector("#user-pass");
 const confirmPassword = document.querySelector("#confirm-pass");
-
-phone.addEventListener("input", () => {
-  phone.value = phone.value.replace(/[^0-9-]/g, "");
-});
+const showPassword = document.querySelector("#showPassword");
 
 inputs.forEach((input) => {
   input.addEventListener("blur", (event) => {
@@ -31,6 +28,20 @@ inputs.forEach((input) => {
       InputValidater.inputInvalid(input);
     }
   });
+});
+
+phone.addEventListener("input", () => {
+  phone.value = phone.value.replace(/[^0-9-]/g, "");
+});
+
+showPassword.addEventListener("click", () => {
+  if (password.type === "password") {
+    password.type = "text";
+    confirmPassword.type = "text";
+  } else {
+    password.type = "password";
+    confirmPassword.type = "password";
+  }
 });
 
 form.addEventListener("submit", (event) => {
