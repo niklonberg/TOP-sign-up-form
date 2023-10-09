@@ -1,7 +1,10 @@
 const log = console.log;
 
-const form = document.querySelector("#sign-up-form");
+import InputValidate from "/classes/inputValidater.js";
 
+const InputValidater = new InputValidate();
+
+const form = document.querySelector("#sign-up-form");
 const inputs = document.querySelectorAll("input");
 
 const password = document.querySelector("#user-pass");
@@ -10,7 +13,7 @@ const confirmPassword = document.querySelector("#confirm-pass");
 inputs.forEach((input) => {
   input.addEventListener("blur", (event) => {
     const input = event.target;
-    const inputValid = input.checkValidity();
+    const inputIsValid = input.checkValidity();
     const siblingSpan = input.nextElementSibling;
 
     siblingSpan.classList.remove("display-none");
@@ -21,12 +24,10 @@ inputs.forEach((input) => {
       return;
     }
 
-    if (inputValid) {
-      input.classList.remove("input-invalid");
-      input.classList.add("input-valid");
+    if (inputIsValid) {
+      InputValidater.inputValid(input);
     } else {
-      input.classList.remove("input-valid");
-      input.classList.add("input-invalid");
+      InputValidater.inputInvalid(input);
     }
   });
 });

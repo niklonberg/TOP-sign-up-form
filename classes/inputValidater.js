@@ -1,5 +1,5 @@
-export default class inputValidater {
-  constructor();
+export default class InputValidate {
+  constructor() {}
 
   inputValid(inputField) {
     inputField.classList.remove("input-invalid");
