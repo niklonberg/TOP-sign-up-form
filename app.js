@@ -36,17 +36,20 @@ phone.addEventListener("input", () => {
 });
 
 showPassword.addEventListener("click", () => {
-  if (password.type === "password") {
-    password.type = "text";
-    confirmPassword.type = "text";
-    showPassword.textContent = "hide password";
-    passwordFieldState.textContent = "Your password is visible";
-  } else {
-    password.type = "password";
-    confirmPassword.type = "password";
-    showPassword.textContent = "show password";
-    passwordFieldState.textContent = "Your password is hidden";
+  let setPasswordType = "text";
+  let setPasswordBtnState = "hide";
+  let setPasswordFieldStateVisibility = "visible";
+
+  if (password.type === "text") {
+    setPasswordType = "password";
+    setPasswordBtnState = "show";
+    setPasswordFieldStateVisibility = "hidden";
   }
+
+  password.type = setPasswordType;
+  confirmPassword.type = setPasswordType;
+  showPassword.textContent = `${setPasswordBtnState} password`;
+  passwordFieldState.textContent = `Your password is ${setPasswordFieldStateVisibility}`;
 });
 
 form.addEventListener("submit", (event) => {
