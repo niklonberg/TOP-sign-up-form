@@ -52,10 +52,15 @@
     right: -20px;
     transform: translateY(-50%);
   }
-}
 
-@media (min-width: 950px) {
-  #sign-up {
-    grid-template-columns: 1fr 1fr;
+  #passwordFieldState {
+    position: absolute;
+    top: -9999px;
+  }
+
+  @media (min-width: 950px) {
+    #sign-up {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }

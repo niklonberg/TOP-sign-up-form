@@ -11,6 +11,7 @@ const phone = document.querySelector("#user-phone");
 const password = document.querySelector("#user-pass");
 const confirmPassword = document.querySelector("#confirm-pass");
 const showPassword = document.querySelector("#showPassword");
+const passwordFieldState = document.querySelector("#passwordFieldState");
 
 inputs.forEach((input) => {
   input.addEventListener("blur", (event) => {
@@ -39,10 +40,12 @@ showPassword.addEventListener("click", () => {
     password.type = "text";
     confirmPassword.type = "text";
     showPassword.textContent = "hide password";
+    passwordFieldState.textContent = "Your password is visible";
   } else {
     password.type = "password";
     confirmPassword.type = "password";
     showPassword.textContent = "show password";
+    passwordFieldState.textContent = "Your password is hidden";
   }
 });
 

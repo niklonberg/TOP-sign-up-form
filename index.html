@@ -126,8 +126,12 @@
                     autocomplete="new-password"
                     minlength="8"
                     required
+                    aria-describedby="passwordFieldState"
                   />
                   <span class="display-none"></span>
+                  <span id="passwordFieldState" aria-live="polite">
+                    Password is hidden
+                  </span>
                 </div>
               </div>
               <div class="sign-up__box">
