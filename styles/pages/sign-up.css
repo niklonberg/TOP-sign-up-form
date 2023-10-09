@@ -5,7 +5,7 @@
 
   #sign-up-header {
     position: relative;
-    background-image: url(/assets/img/olena-bohovyk-r0M9HrfJMBM-unsplash.jpg);
+    background-image: url(../../assets/img/olena-bohovyk-r0M9HrfJMBM-unsplash.jpg);
     background-size: cover;
     background-position: bottom;
     padding-block: var(--header-padding);
