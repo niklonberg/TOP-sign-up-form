@@ -1,6 +1,6 @@
 const log = console.log;
 
-import InputValidate from "/classes/inputValidater.js";
+import InputValidate from "./classes/inputValidater.js";
 const InputValidater = new InputValidate();
 
 const form = document.querySelector("#sign-up-form");

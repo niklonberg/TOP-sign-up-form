@@ -1,10 +1,10 @@
 @layer base, component, page;
 
-@import url(/styles/components/base.css);
-@import url(/styles/pages/sign-up.css);
-@import url(/styles/components/container.css);
-@import url(/styles/components/header.css);
-@import url(/styles/components/form-sign-up.css);
-@import url(/styles/components/buttons.css);
-@import url(/styles/components/input.css);
-@import url(/styles/components/helpers.css);
+@import url(./styles/components/base.css);
+@import url(./styles/pages/sign-up.css);
+@import url(./styles/components/container.css);
+@import url(./styles/components/header.css);
+@import url(./styles/components/form-sign-up.css);
+@import url(./styles/components/buttons.css);
+@import url(./styles/components/input.css);
+@import url(./styles/components/helpers.css);
