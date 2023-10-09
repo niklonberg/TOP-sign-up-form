@@ -38,9 +38,11 @@ showPassword.addEventListener("click", () => {
   if (password.type === "password") {
     password.type = "text";
     confirmPassword.type = "text";
+    showPassword.textContent = "hide password";
   } else {
     password.type = "password";
     confirmPassword.type = "password";
+    showPassword.textContent = "show password";
   }
 });
 
