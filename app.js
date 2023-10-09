@@ -6,8 +6,14 @@ const InputValidater = new InputValidate();
 const form = document.querySelector("#sign-up-form");
 const inputs = document.querySelectorAll("input");
 
+const phone = document.querySelector("#user-phone");
+
 const password = document.querySelector("#user-pass");
 const confirmPassword = document.querySelector("#confirm-pass");
+
+phone.addEventListener("input", () => {
+  phone.value = phone.value.replace(/[^0-9-]/g, "");
+});
 
 inputs.forEach((input) => {
   input.addEventListener("blur", (event) => {
