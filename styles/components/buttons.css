@@ -20,4 +20,14 @@
     color: var(--text-colored-background);
     box-shadow: 0px 0px 8px rgba(0 0 0 / 0.3);
   }
+
+  .show-pass-btn {
+    font-size: var(--fs-x-small);
+    letter-spacing: 0;
+    color: var(--text-colored-background);
+    background-color: black;
+    padding: 0px 5px;
+    border-radius: 3px;
+    text-transform: capitalize;
+  }
 }
